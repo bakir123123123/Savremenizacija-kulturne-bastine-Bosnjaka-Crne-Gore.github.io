@@ -26,14 +26,17 @@
 
     <style>
       *, *::before, *::after { box-sizing: border-box; }
-      .hero-heading-right .hero-wrapper { align-items: flex-start; }
-      .hero-heading-right .hero-split:last-child { min-width: 0; }
-      .hero-heading-right .project-date { margin: 0 0 18px; font-size: 14px; opacity: .72; }
-      .hero-heading-right .project-quote { margin: 18px 0; padding: 16px 20px; border-left: 4px solid currentColor; background: rgba(0,0,0,.04); line-height: 1.65; }
-      .hero-heading-right .project-link { overflow-wrap: anywhere; }
+      .project-section { padding: 64px 0; }
+      .project-card { max-width: 950px; margin: 0 auto; padding: 44px 48px; background: #fff; box-shadow: 0 8px 30px rgba(0,0,0,.07); border-radius: 8px; }
+      .project-card h2 { margin: 0 0 10px; }
+      .project-card p { line-height: 1.75; }
+      .project-label { margin: 0 0 8px; font-size: 12px; font-weight: 700; letter-spacing: 1.5px; opacity: .7; }
+      .project-date { margin: 0 0 24px; font-size: 14px; opacity: .72; }
+      .project-quote { margin: 22px 0; padding: 18px 22px; border-left: 4px solid currentColor; background: rgba(0,0,0,.04); line-height: 1.7; }
+      .project-link { overflow-wrap: anywhere; }
       @media (max-width: 767px) {
-        .hero-heading-right .hero-wrapper { gap: 28px; }
-        .hero-heading-right .hero-split { width: 100%; }
+        .project-section { padding: 36px 0; }
+        .project-card { padding: 28px 22px; }
       }
     </style>
 </head>
@@ -69,24 +72,35 @@
         <div class="container">
             <div class="hero-wrapper">
                 <div class="hero-split">
-                    <img src="./index_files/6839e7a1fd410b278d66c532_Screenshot 2025-05-30 191456.png" loading="lazy" sizes="(max-width: 588px) 100vw, 588px" srcset="https://cdn.prod.website-files.com/6839e57c2ab3fde28b4442a6/6839e7a1fd410b278d66c532_Screenshot%202025-05-30%20191456-p-500.png 500w, https://cdn.prod.website-files.com/6839e57c2ab3fde28b4442a6/6839e7a1fd410b278d66c532_Screenshot%202025-05-30%20191456.png 588w"
-                    alt="" class="shadow-two">
+                    <img src="./index_files/6839e7a1fd410b278d66c532_Screenshot 2025-05-30 191456.png" loading="lazy" sizes="(max-width: 588px) 100vw, 588px" srcset="https://cdn.prod.website-files.com/6839e57c2ab3fde28b4442a6/6839e7a1fd410b278d66c532_Screenshot%202025-05-30%20191456-p-500.png 500w, https://cdn.prod.website-files.com/6839e57c2ab3fde28b4442a6/6839e7a1fd410b278d66c532_Screenshot%202025-05-30%20191456.png 588w" alt="" class="shadow-two">
                     <figcaption><i>Zastave EU, Crne Gore i Bošnjačka nacionalna zastava, foto bnvcg</i></figcaption>
                     <a href="interviju.html" class="button dugme w-button">Pogledajte interviju</a>
                 </div>
                 <div class="hero-split">
-                    <h1 class="heading-2"><strong class="bold-text">Uspješno realizovan projekat „Romi i Egipćani – Simbolika kulture i identiteta”</strong></h1>
-                    <p class="project-date"><i>Datum objave: 25.05.2026. god.</i></p>
-                    <p class="margin-bottom-24px">Kao nacija koja je često osporavana i za čije se mjesto u društvu trebalo posebno boriti, Romi su decenijama unazad ulagali napore da postanu ravnopravni članovi crnogorskog društva. Da su u tome uspjeli svjedoči i projekat „Romi i Egipćani – Simbolika kulture i identiteta”, saopštili su organizatori.</p>
-                    <p class="margin-bottom-24px">Kroz sistematsko istraživanje tradicionalnih simbola, običaja, vjerovanja, jezika i izraza, autor je sebi zadao cilj da otkrije i valorizuje suštinu identiteta ovih zajednica.</p>
-                    <blockquote class="project-quote">„Takođe, projekat ima dvostruki cilj: osnažiti kulturnu samosvijest unutar samih romskih i egipćanskih zajednica, posebno kod mladih i istovremeno podići nivo znanja i senzibiliteta u široj javnosti o raznolikosti i vrijednosti kulturnog nasljeđa ovih etničkih grupa. Kroz dokumentaciju i promociju, doprinosi se izgradnji društvenog uvažavanja i međukulturalnog dijaloga u Crnoj Gori”, navodi se u saopštenju.</blockquote>
-                    <p class="margin-bottom-24px"><strong>• Izvještaj o radu</strong>, u kojem su detaljno opisane aktivnosti promocije.</p>
-                    <p class="margin-bottom-24px">Pored navedene dokumentacije, rezultati istraživanja, analiza ankete i upitnik javno su objavljeni na internet stranici projekta, čime je ostvarena svrha ove aktivnosti – javna promocija projekta i dostupnost rezultata zainteresovanoj javnosti.</p>
-                    <p class="margin-bottom-24px">Takođe, važno je napomenuti da je jedna od ključnih aktivnosti u realizaciji projekta bila priprema upitnika, sprovođenje anketiranja, kao i analiza rezultata ankete. Nakon toga je pripremljen izvještaj sa analizom stanja.</p>
-                    <p class="margin-bottom-24px">S tim u vezi, rezultate ankete sa analizom možete pronaći na link adresi:<br><a class="project-link" href="http://romi-i-egipcani-simbolika-kulture-i-identiteta.online/" target="_blank" rel="noopener noreferrer">romi-i-egipcani-simbolika-kulture-i-identiteta.online</a></p>
-                    <p class="margin-bottom-24px"><strong>Autor projekta je Elvir Gugać.</strong></p>
-                    <p class="margin-bottom-24px">„Ovo je još jedan od projekata koji je finansijski podržao Fond za zaštitu i ostvarivanje manjinskih prava”, zaključuju organizatori.</p>
+                    <h1 class="heading-2"><strong class="bold-text">Savremenizacija kulturne baštine Bošnjaka Crne Gore</strong></h1>
+                    <p class="margin-bottom-24px">Savremenizacija kulturne baštine Bošnjaka Crne Gore je veoma važan proces koji se odnosi na očuvanje i promociju kulturnog identiteta, ali i prilagođavanje kulturne baštine savremenim potrebama i izazovima.</p>
+                    <p class="margin-bottom-24px">Ovaj proces podrazumijeva inovativne pristupe u očuvanju tradicije, uz uvođenje novih tehnoloških, umjetničkih i društvenih dimenzija koje omogućavaju integraciju prošlosti i sadašnjosti.</p>
+                    <p class="margin-bottom-24px">Kao srž projekta koji tretiramo je mogućnost savremene tehnologije koja omogućava digitalizaciju materijalne i nematerijalne kulturne baštine. To uključuje snimanje i arhiviranje narodnih običaja, običajnih pjesama, narodnih igara, rukopisnih djela i drugih elemenata bošnjačke tradicije. Ovaj proces čini kulturnu baštinu dostupnijom i dugoročno očuvanom, čime se omogućava da buduće generacije imaju uvid u svoje naslijeđe.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-section">
+        <div class="container">
+            <div class="project-card">
+                <p class="project-label">PROJEKAT</p>
+                <h2>Uspješno realizovan projekat „Romi i Egipćani – Simbolika kulture i identiteta”</h2>
+                <p class="project-date"><i>Datum objave: 25.05.2026. god.</i></p>
+                <p>Kao nacija koja je često osporavana i za čije se mjesto u društvu trebalo posebno boriti, Romi su decenijama unazad ulagali napore da postanu ravnopravni članovi crnogorskog društva. Da su u tome uspjeli svjedoči i projekat „Romi i Egipćani – Simbolika kulture i identiteta”, saopštili su organizatori.</p>
+                <p>Kroz sistematsko istraživanje tradicionalnih simbola, običaja, vjerovanja, jezika i izraza, autor je sebi zadao cilj da otkrije i valorizuje suštinu identiteta ovih zajednica.</p>
+                <blockquote class="project-quote">„Takođe, projekat ima dvostruki cilj: osnažiti kulturnu samosvijest unutar samih romskih i egipćanskih zajednica, posebno kod mladih i istovremeno podići nivo znanja i senzibiliteta u široj javnosti o raznolikosti i vrijednosti kulturnog nasljeđa ovih etničkih grupa. Kroz dokumentaciju i promociju, doprinosi se izgradnji društvenog uvažavanja i međukulturalnog dijaloga u Crnoj Gori”, navodi se u saopštenju.</blockquote>
+                <p><strong>• Izvještaj o radu</strong>, u kojem su detaljno opisane aktivnosti promocije.</p>
+                <p>Pored navedene dokumentacije, rezultati istraživanja, analiza ankete i upitnik javno su objavljeni na internet stranici projekta, čime je ostvarena svrha ove aktivnosti – javna promocija projekta i dostupnost rezultata zainteresovanoj javnosti.</p>
+                <p>Takođe, važno je napomenuti da je jedna od ključnih aktivnosti u realizaciji projekta bila priprema upitnika, sprovođenje anketiranja, kao i analiza rezultata ankete. Nakon toga je pripremljen izvještaj sa analizom stanja.</p>
+                <p>S tim u vezi, rezultate ankete sa analizom možete pronaći na link adresi:<br><a class="project-link" href="http://romi-i-egipcani-simbolika-kulture-i-identiteta.online/" target="_blank" rel="noopener noreferrer">romi-i-egipcani-simbolika-kulture-i-identiteta.online</a></p>
+                <p><strong>Autor projekta je Elvir Gugać.</strong></p>
+                <p>„Ovo je još jedan od projekata koji je finansijski podržao Fond za zaštitu i ostvarivanje manjinskih prava”, zaključuju organizatori.</p>
             </div>
         </div>
     </section>
